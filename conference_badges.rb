@@ -20,7 +20,7 @@ end
 
 def printer(attendees)
   printer_messages = []
-  batch_badge_creator.each do |print1|
+  batch_badge_creator(attendees).each do |print1|
     printer_messages << print1
   end
   assign_rooms.each do |print2|
